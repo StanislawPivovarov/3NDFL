@@ -14,7 +14,7 @@
 # Порядок запуска проекта:
 ## 1. Клонировать проект к себе
 ```
-
+git clone https://github.com/StanislawPivovarov/3NDFL.git
 ```
 ## 2. Установить зависимости
 ```
