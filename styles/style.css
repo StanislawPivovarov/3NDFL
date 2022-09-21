@@ -1,6 +1,7 @@
 @import url('/node_modules/bootstrap/dist/css/bootstrap-grid.css');
 @import url('/styles/main-page.css');
 @import url('/node_modules/normalize.css/normalize.css');
+@import url('/styles/purpose.css');
 
 @font-face {
 	font-family: 'Montserrat';

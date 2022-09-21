@@ -1,0 +1,108 @@
+.purpose-house-wrapper {
+  margin-top: 64px;
+  height: 732px;
+}
+.purpose-house-img {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  height: 200px;
+}
+.purpose-house-header {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.purpose-house-subheader {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.purpose-house-description {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 31px;
+}
+.purpose-house-description span{
+    font-weight: 700;
+}
+.purpose-house-price {
+  width: max-content;
+  background-color: #faed61;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+.purpose-house-request {
+  border: none;
+  border-radius: 2px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  margin-top: 24px;
+  height: 40px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  transition: background-color ease 0.2s;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.purpose-house-whatsapp {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  justify-content: center;
+  background: none;
+  border: 1px solid #262626;
+  border-radius: 2px;
+  height: 40px;
+}
+.purpose-house-whatsapp-wrapper {
+  width: 100%;
+}
+.purpose-house-whatsapp-text {
+  margin-left: 9px;
+}
+.purpose-ip-ooo{
+    list-style-type: none;
+    padding-left: 0;
+}
+.purpose-ip-ooo li{
+    padding-top: 15px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 21.79px;
+    
+}
+.purpose-price-buttons{
+    position: relative;
+    margin-bottom: auto;
+}
