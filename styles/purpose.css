@@ -102,7 +102,54 @@
     line-height: 21.79px;
     
 }
-.purpose-price-buttons{
-    position: relative;
-    margin-bottom: auto;
+
+.purpose-house-wrapper{
+  
+  height: 600px;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.free-registration{
+display: flex;
+flex-direction: row;
+height: max-content;
+}
+.free-registration-img{
+  width: auto;
+}
+.text-wrapper{
+  width: 100%;
+}
+.free-registration-img{
+  height: 297px;
+  width: 400px;
+}
+@media (min-width: 320px) {
+  .free-registration {
+    flex-direction: column;
+  }
+  .free-registration-img{
+    width: auto;
+    height: 200px;
+  }
+  .purpose-house-wrapper{
+    height: auto;
+  }
+}
+  @media (min-width: 992px) {
+    .free-registration {
+      flex-direction: row;
+  }
+  .free-registration-img{
+    height: 297px;
+    width: 400px;
+  }
+  .purpose-house-wrapper{
+    height: 600px !important;
+  }
+  .free-registration{
+    height: max-content !important;
+  }
 }
