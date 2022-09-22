@@ -1,0 +1,14 @@
+.list-documents{
+    background-color: #EAEAF0;
+    padding-bottom: 150px;
+}
+
+  .list-documents-header{
+    padding-top: 60px;
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 55px
+  }
+.row-lists{
+    flex-direction: row-reverse;
+}

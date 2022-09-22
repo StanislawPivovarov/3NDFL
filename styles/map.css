@@ -1,0 +1,131 @@
+.map-contact-screen{
+    padding-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 32px;
+}
+.social-media{
+    display: flex;
+}
+.social-media p{
+    padding-left: 10px;
+}
+
+#map{
+    width:100%;
+    height: 300px;
+}
+
+.map-contact-onmap{
+    width:450px;
+    height:580px;
+}
+.wrapper-onmap{
+    width:450px;
+    height:580px;
+}
+.map-contact-header{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+display: flex;
+align-items: center;
+}
+.map-adress-subheader{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+}
+.map-moscow{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+}
+.map-spb{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.map-tel-subheader{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+.map-tel-1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.map-tel-2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.map-email-subheader{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+.map-email a{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+text-decoration: none;
+color: #11B7E9;
+}
+.follower-vk{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+}
+.follower-insta{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+}
+@media(min-width:768px){
+    .map-contact-screen{
+        
+        width: 472px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #map{
+        height: 678px;
+    }
+}
+
+@media(min-width:992px){
+    .map-contact-screen{
+        display:none;
+    } 
+    #map{
+        height: 725px;
+    }
+    
+}

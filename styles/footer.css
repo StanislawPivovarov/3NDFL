@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap');
+.footer{
+    width: 100%;
+    height: 357px;
+    background-color: #262626
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 60px;
+}
+.footer-logo{
+    width: 229px;
+    height: auto;
+}
+hr.solid{
+    width: 100%;
+}
+
+.footer-text{
+    font-family: 'Open Sans', serif;
+    color: #fff;
+}
+.footer-text-2{
+    font-family: 'Open Sans', serif;
+    color: #fff;
+}
+.footer-copyright{
+    font-family: 'Open Sans', serif;
+    color: #fff;
+    text-transform: uppercase;
+}

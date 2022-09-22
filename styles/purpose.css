@@ -138,6 +138,11 @@ height: max-content;
     height: auto;
   }
 }
+@media(min-width: 768px){
+  .purpose-house-wrapper{
+    height: 632px;
+  }
+}
   @media (min-width: 992px) {
     .free-registration {
       flex-direction: row;
@@ -147,9 +152,10 @@ height: max-content;
     width: 400px;
   }
   .purpose-house-wrapper{
-    height: 600px !important;
+    height: 680px;
   }
   .free-registration{
     height: max-content !important;
+    margin-bottom: 150px;
   }
 }
