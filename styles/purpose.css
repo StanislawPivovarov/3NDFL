@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap');
 .purpose-house-wrapper {
   margin-top: 64px;
   height: 732px;
@@ -140,7 +141,7 @@ height: max-content;
 }
 @media(min-width: 768px){
   .purpose-house-wrapper{
-    height: 632px;
+    height: 652px;
   }
 }
   @media (min-width: 992px) {

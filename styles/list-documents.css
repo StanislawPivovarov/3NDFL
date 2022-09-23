@@ -1,14 +1,60 @@
-.list-documents{
-    background-color: #EAEAF0;
-    padding-bottom: 150px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap");
+
+.list-documents {
+  background-color: #eaeaf0;
+  padding-bottom: 150px;
 }
 
-  .list-documents-header{
-    padding-top: 60px;
-    margin-top: 0px;
-    text-align: center;
-    padding-bottom: 55px
-  }
-.row-lists{
-    flex-direction: row-reverse;
+.list-documents-header {
+  padding-top: 60px;
+  margin-top: 0px;
+  text-align: center;
+  padding-bottom: 55px;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+}
+.row-lists {
+  flex-direction: row-reverse;
+}
+.accordion {
+  width: 93%;
+  font-family: tahoma;
+  line-height: 200%;
+}
+.accordion h3 {
+  background: #fff;
+  padding: 30px;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  cursor: pointer;
+  border-top: 1px solid #dadae0;
+}
+.header-list-buy-appart {
+  border-top: none;
+}
+.subdescription-list {
+  background: #fff;
+  padding: 10px;
+  display: none;
+}
+.accordion h3 img {
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+@media (min-width: 320px) {
+    .list-documents-header{
+        font-size: 36px;
+    }
+    .accordion h3{
+        font-size:18px;
+    }
 }
