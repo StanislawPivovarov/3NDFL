@@ -1,0 +1,81 @@
+500;600&family=Open+Sans:wght@400;500;600&display=swap');
+.form-bottom {
+  background-color: #f4f4f8;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.form-bottom-form {
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+  width: 111%;
+  position: relative;
+}
+.form-bottom-wrapper {
+  padding: 30px;
+}
+.img {
+  width: 100%;
+  z-index: 1;
+  right: 77px;
+  position: relative;
+}
+.form-header{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+}
+.whatsapp-text{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+}
+@media (min-width: 320px) {
+  .form-bottom-form {
+    width: 100%;
+    z-index: 1;
+  }
+  .form-row {
+    flex-direction: column-reverse;
+  }
+  .img {
+    top: 60px;
+    z-index: 2;
+    right: 0;
+  }
+  .form-bottom {
+    padding-top: 0px;
+  }
+}
+@media(min-width: 992px){
+    .form-bottom {
+        background-color: #f4f4f8;
+        padding-top: 100px;
+      }
+      
+      .form-bottom-form {
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 2;
+        width: 111%;
+        position: relative;
+      }
+      .form-row {
+        flex-direction: row;
+      }
+      .form-bottom-wrapper {
+        padding: 30px;
+      }
+      .img {
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+        right: 77px;
+        position: relative;
+      }
+}

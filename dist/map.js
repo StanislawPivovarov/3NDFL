@@ -1,0 +1,3 @@
+
+ymaps.ready(init);function init(){var myMap=new ymaps.Map("map",{center:[55.758266,37.626502],zoom:18,controls:[]},{searchControlProvider:'yandex#search'}),myGeoObject=new ymaps.GeoObject({geometry:{type:"Point",coordinates:[55.758266,37.626502]},},{preset:'islands#blackStretchyIcon',draggable:true})
+myMap.geoObjects.add(myGeoObject).add(myPieChart).add(new ymaps.Placemark([55.684758,37.738521],{balloonContent:'цвет <strong>воды пляжа бонди</strong>'},{preset:'islands#icon',iconColor:'#0095b6'}))}
