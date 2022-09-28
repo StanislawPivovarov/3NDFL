@@ -112,8 +112,7 @@
   .map-contact-screen {
     position: relative;
     width: 472px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 30px;
   }
   #map {
     height: 678px;
@@ -129,10 +128,8 @@
     right: 0;
     margin-top: 70px;
     margin-bottom: 70px;
-    width: 450px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-right: 200px;
+    width: 472px;
+    margin-right: 200px !important;
   }
 }
 
@@ -145,8 +142,8 @@
     right: 0;
     margin-top: 70px;
     margin-bottom: 70px;
-    width: 450px;
-    margin-right: 200px;
+    width: 472px;
+    margin-right: 30px;
   }
   #map {
     height: 725px;

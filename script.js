@@ -4,6 +4,7 @@ $(document).ready(function (){
       $(this).next().slideToggle(500);
       $(".subdescription-list").not($(this).next()).slideUp(500);
       $(".arrow-list-buy").css({'transform':'rotate(90deg)'});
+
       
     });
     $(".header-list-sell-appart").click(function () {

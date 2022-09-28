@@ -16,16 +16,13 @@
   font-size: 48px;
   line-height: 59px;
 }
-.row-lists {
-  flex-direction: row-reverse;
-}
+
 .accordion {
-  width: 93%;
   font-family: tahoma;
   line-height: 200%;
 }
 .accordion h3 {
-  background: #fff;
+  
   padding: 30px;
   font-family: "Montserrat", serif;
   font-style: normal;
@@ -49,12 +46,65 @@
   margin-top: 5px;
   margin-right: 5px;
 }
+.wrapper-accordion{
+  width: 100%;
+  flex-direction: row;
+}
+.accordion{
+  width: 100%;
+  padding: 0;
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+  z-index: 4;
+}
+.container-accordion{
+  padding: 0;
+  z-index: 4;
+}
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+}
+.accordion-button{
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 18px
+}
+.accordion-button::after{
+  transform: rotate(-90deg);
+}
+.accordion-button:not(.collapsed)::after{
+  transform: rotate(0deg);
+  background-image: var(--bs-accordion-btn-icon);
+}
+.paper{
+  position: absolute;
+  overflow:hidden;
+}
+.paper2{
+  position: absolute;
+  padding-top: 400px;
 
+  overflow:hidden;
+}
 @media (min-width: 320px) {
     .list-documents-header{
         font-size: 36px;
     }
-    .accordion h3{
-        font-size:18px;
+    .accordion{
+      width: 100%;
     }
+    .list-documents{
+      padding-bottom: 64px;
+    }
+}
+@media (min-width: 992px) {
+  .list-documents-header{
+      font-size: 36px;
+  }
+  .accordion{
+    width: 100%;
+  }
+  .list-documents{
+    padding-bottom: 120px;
+  }
 }

@@ -1,482 +1,603 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9440f975-6e8c-4e36-9e6f-2dcdfb5b50bf" type="text/javascript"></script>
-    
-    <script src="/node_modules/bootstrap/js/src/util/component-functions.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="/script.js"></script>
-    <script src="map.js" type="text/javascript"></script>
-    <title>Центр отчетности</title>
-  </head>
-  <body>
-    <div class="main-page">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="main-page-header">
-              <img
-                src="/assets/images/main-page/logo.svg"
-                alt="logo"
-                class="main-page-logo"
-              />
-              <div class="main-page-phone">
-                <div class="main-page-phone-wrapper">
-                  <img
-                    src="./assets/images/main-page/phone.svg"
-                    alt=""
-                    class="main-page-phone-logo"
-                  />
-                  <a href="tel:"+7800000000" class="main-page-phone-num">+7 800 00 00 00</a>
-                </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9440f975-6e8c-4e36-9e6f-2dcdfb5b50bf"
+    type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="map.js" type="text/javascript"></script>
+  <title>Центр отчетности</title>
+</head>
+
+<body>
+  <div class="main-page">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="main-page-header">
+            <img src="/assets/images/main-page/logo.svg" alt="logo" class="main-page-logo" />
+            <div class="main-page-phone">
+              <div class="main-page-phone-wrapper">
+                <img src="./assets/images/main-page/phone.svg" alt="" class="main-page-phone-logo" />
+                <a href="tel:" +7800000000" class="main-page-phone-num">+7 800 00 00 00</a>
               </div>
-              <div class="main-page-whatsapp">
-                <button class="main-page-whatsapp-wrapper">
-                  <img
-                    src="/assets/images/main-page/wa.svg"
-                    alt=""
-                    class="main-page-whatsapp-logo"
-                  />
-                  <p class="main-page-whatsapp-text">Написать в WhatsApp</p>
-                </button>
-              </div>
+            </div>
+            <div class="main-page-whatsapp">
+              <button class="main-page-whatsapp-wrapper">
+                <img src="/assets/images/main-page/wa.svg" alt="" class="main-page-whatsapp-logo" />
+                <p class="main-page-whatsapp-text">Написать в WhatsApp</p>
+              </button>
             </div>
           </div>
         </div>
-        <div class="main-page-wrapper">
-          <div class="row">
-            <div class="col-sm">
-              <div class="main-page-filling">
-                <p class="main-page-filling-headline">
-                  Заполним декларацию <br />
-                  3-НДФЛ
-                </p>
-                <p class="main-page-filling-sub-free-consult">
-                  Бесплатная консультация специалиста
-                </p>
-                <p class="main-page-filling-sub-payment">
-                  Оплата после выполнения
-                </p>
-                <p class="main-page-filling-sub-following">
-                  Сопровождение до завершения проверки декларации
-                </p>
-              </div>
+      </div>
+      <div class="main-page-wrapper">
+        <div class="row">
+          <div class="col-sm">
+            <div class="main-page-filling">
+              <p class="main-page-filling-headline">
+                Заполним декларацию <br />
+                3-НДФЛ
+              </p>
+              <p class="main-page-filling-sub-free-consult">
+                Бесплатная консультация специалиста
+              </p>
+              <p class="main-page-filling-sub-payment">
+                Оплата после выполнения
+              </p>
+              <p class="main-page-filling-sub-following">
+                Сопровождение до завершения проверки декларации
+              </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm">
-              <div class="main-page-form">
-                <div class="main-page-form__wrapper">
-                  <p class="main-page-form-fill__headline">Заполните заявку и мы свяжемся с Вами в ближайшее время!</p>
-                  <p class="main-page-form-fill__tel">Телефон для связи</p>
-                  <input type="tel" class="main-page-form-fill__tel-input" name="" id="">
-                  <p class="main-page-form-fill__reason">На что у Вас 3-НДФЛ</p>
-                  <select name="" id="" class="main-page-form-fill__dropdown">
-                    <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                    <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                    <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                    <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                  </select>
-                  <button class="main-page-form-fill__submit">Заказать</button>
-                </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="main-page-form">
+              <div class="main-page-form__wrapper">
+                <p class="main-page-form-fill__headline">Заполните заявку и мы свяжемся с Вами в ближайшее время!</p>
+                <p class="main-page-form-fill__tel">Телефон для связи</p>
+                <input type="tel" class="main-page-form-fill__tel-input" name="" id="">
+                <p class="main-page-form-fill__reason">На что у Вас 3-НДФЛ</p>
+                <select name="" id="" class="main-page-form-fill__dropdown">
+                  <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+                  <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+                  <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+                  <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+                </select>
+                <button class="main-page-form-fill__submit">Заказать</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="purpose">
-        <div class="container ">
+  </div>
+  <div class="purpose">
+    <div class="container">
+      <div class="row">
+        <!-- грид -->
+        <div class="grid">
+
+          <div class="purpose-house-wrapper nedvizhimost">
+            <div class="img-text-wrapper">
+              <img src="/assets/images/purpose/appartments.svg" alt="" class="purpose-house-img">
+              <p class="purpose-house-header purpose-header">Купили недвижимость</p>
+              <p class="purpose-house-subheader purpose-subheader">Вы приобрели недвижимость (квартира, дом, комната,
+                земельный участок с домом)?</p>
+              <p class="purpose-house-description purpose-description">Вы можете вернуть <span>до 260 000</span> рублей с
+                суммы, уплаченной за вашу квартиру или дом, а также можете вернуть <span>до 390 000</span> рублей с
+                уплаченных процентов по ипотеке.</p>
+            </div>
+            
+            <div class="purpose-price-buttons">
+              <p class="purpose-house-price purpose-price">300 ₽</p>
+              <button class="purpose-house-request purpose-request">Заказать</button>
+              <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
+                <button class="purpose-house-whatsapp purpose-whatsapp">
+                  <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
+                  <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="purpose-house-wrapper obuchenie">
+            <div class="img-text-wrapper">
+              <img src="/assets/images/purpose/education.svg" alt="" class="purpose-house-img">
+              <p class="purpose-house-header">Оплатили обучение</p>
+              <p class="purpose-house-subheader">Вы заплатили за свое обучение, за своих детей, или братьев, сестер?</p>
+              <p class="purpose-house-description">Вы имеете право получить <span>13%</span> от сумм, затраченных Вами на
+                обучение.</p>
+            </div>
+            
+            <div class="purpose-price-buttons">
+              <p class="purpose-house-price purpose-price">300 ₽</p>
+              <button class="purpose-house-request purpose-request">Заказать</button>
+              <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
+                <button class="purpose-house-whatsapp purpose-whatsapp">
+                  <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
+                  <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="purpose-house-wrapper lechenie">
+            <div class="img-text-wrapper">
+              <img src="/assets/images/purpose/med.svg" alt="" class="purpose-house-img">
+              <p class="purpose-house-header">Оплатили лечение</p>
+              <p class="purpose-house-subheader">Вы оплатили свое лечение или своих родственников (детей, супруга(-и),
+                родителей)?</p>
+              <p class="purpose-house-description">Или заплатили за медикаменты? Вы можете вернуть 13% от суммы,
+                затраченной
+                Вами на лечение</p>
+            </div>
+           
+            <div class="purpose-price-buttons">
+              <p class="purpose-house-price purpose-price">300 ₽</p>
+              <button class="purpose-house-request purpose-request">Заказать</button>
+              <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
+                <button class="purpose-house-whatsapp purpose-whatsapp">
+                  <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
+                  <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="purpose-house-wrapper dopolnitelniy-dohod">
+            <div class="img-text-wrapper">
+              <img src="/assets/images/purpose/additional-income.svg" alt="" class="purpose-house-img">
+              <p class="purpose-house-header">Получили дополнительный доход</p>
+              <p class="purpose-house-subheader">При продаже имущества (кваритира, дом, дача, гараж, автомобиль).</p>
+              <p class="purpose-house-description">При получении дополнительного дохода (сдача имущества в аренду,
+                получение
+                выигрышей). <br> Вы обязаны подать декларацию до <span>30 апреля</span></p>
+            </div>
+           
+            <div class="purpose-price-buttons">
+              <p class="purpose-house-price purpose-price">300 ₽</p>
+              <button class="purpose-house-request purpose-request">Заказать</button>
+              <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
+                <button class="purpose-house-whatsapp purpose-whatsapp">
+                  <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
+                  <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="purpose-house-wrapper strahovanie">
+            <div class="img-text-wrapper">
+              <img src="/assets/images/purpose/insurance.svg" alt="" class="purpose-house-img">
+              <p class="purpose-house-header">Страхование</p>
+              <p class="purpose-house-subheader">При оплате страховых взносов по договору добровольного страхования жизни,
+                заключенному на срок <span>не менее 5 лет</span>, вы можете получить налоговый вычет или, говоря проще,
+                вернуть
+                себе часть затраченных денег на страхование жизни</p>
+            </div>
+
+            <div class="purpose-price-buttons">
+              <p class="purpose-house-price purpose-price">300 ₽</p>
+              <button class="purpose-house-request purpose-request">Заказать</button>
+              <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
+                <button class="purpose-house-whatsapp purpose-whatsapp">
+                  <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
+                  <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="purpose-house-wrapper investicii">
+            <div class="img-text-wrapper">
+              <img src="/assets/images/purpose/investitions.svg" alt="" class="purpose-house-img">
+              <p class="purpose-house-header">Инвестиции</p>
+              <p class="purpose-house-subheader">Максимальный размер вычета 400 000 рублей.</p>
+              <p class="purpose-house-description">Можно вернуть <span>до 52 000 рублей в год.</span></p>
+            </div>
+            <div class="purpose-price-buttons">
+              <p class="purpose-house-price purpose-price">300 ₽</p>
+              <button class="purpose-house-request purpose-request">Заказать</button>
+              <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
+                <button class="purpose-house-whatsapp purpose-whatsapp">
+                  <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
+                  <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="purpose-house-wrapper free-registration">
+              <img src="/assets/images/purpose/ip-ooo.svg" alt="" class="purpose-house-img free-registration-img">
+              <div class="text-wrapper">
+                <p class="purpose-house-header">Бесплатная регистрация ИП и ООО</p>
+                <ul class="purpose-ip-ooo">
+                  <li>Подготовим все жуные докумены</li>
+                  <li>Поможем выбрать систему налогооблажения и виды деятельности</li>
+                  <li>Вы не платите госпошлину 800₽</li>
+                  <li>Вам не нужно ходить в налоговую</li>
+                </ul>
+                <button class="purpose-house-request">Оставить заявку</button>
+            </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="how-we-work">
+    <h1 class="how-we-work-header">
+      Как мы работаем
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="circle">
+            <p class="number">1</p>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="col-9">
           <div class="row">
-            <div class="col-sm">
-              <!-- недвижимость -->
-                <div class="purpose-house-wrapper purpose-wrapper">
-                  <img src="/assets/images/purpose/appartments.svg" alt="" class="purpose-house-img">
-                  <p class="purpose-house-header purpose-header">Купили недвижимость</p>
-                  <p class="purpose-house-subheader purpose-subheader">Вы приобрели недвижимость (квартира, дом, комната, земельный участок с домом)?</p>
-                  <p class="purpose-house-description purpose-description">Вы можете вернуть <span>до 260 000</span> рублей с суммы, уплаченной за вашу квартиру или дом, а также можете вернуть <span>до 390 000</span> рублей с уплаченных процентов по ипотеке.</p>
-                  
-                  <div class="purpose-price-buttons">
-                    <p class="purpose-house-price purpose-price">300 ₽</p>
-                    <button class="purpose-house-request purpose-request">Заказать</button>
-                    <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
-                      <button class="purpose-house-whatsapp purpose-whatsapp">
-                      <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
-                      <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
-                    </button>
-                  </div>
-                  
-                    </div>
-                  </div>
-                </div>
-                <!-- обучение -->
-                  <div class="col-sm">
-                    <div class="purpose-house-wrapper">
-                      <img src="/assets/images/purpose/education.svg" alt="" class="purpose-house-img">
-                      <p class="purpose-house-header">Оплатили обучение</p>
-                      <p class="purpose-house-subheader">Вы заплатили за свое обучение, за своих детей, или братьев, сестер?</p>
-                      <p class="purpose-house-description">Вы имеете право получить <span>13%</span>  от сумм, затраченных Вами на обучение.</p>
-                      <div class="purpose-price-buttons">
-                        <p class="purpose-house-price purpose-price">300 ₽</p>
-                        <button class="purpose-house-request purpose-request">Заказать</button>
-                        <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
-                          <button class="purpose-house-whatsapp purpose-whatsapp">
-                          <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
-                          <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
-                        </button>
-                      </div>
-                        </div>
-                  </div>
-                  </div>
-                  <div class="col-sm">
-                    <div class="purpose-house-wrapper">
-                      <img src="/assets/images/purpose/med.svg" alt="" class="purpose-house-img">
-                      <p class="purpose-house-header">Оплатили лечение</p>
-                      <p class="purpose-house-subheader">Вы оплатили свое лечение или своих родственников (детей, супруга(-и), родителей)?</p>
-                      <p class="purpose-house-description">Или заплатили за медикаменты? Вы можете вернуть 13% от суммы, затраченной Вами на лечение</p>
-                      <div class="purpose-price-buttons">
-                        <p class="purpose-house-price purpose-price">300 ₽</p>
-                        <button class="purpose-house-request purpose-request">Заказать</button>
-                        <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
-                          <button class="purpose-house-whatsapp purpose-whatsapp">
-                          <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
-                          <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
-                        </button>
-                      </div>
-                        </div>
-                </div>
+            <div class="col">
+              <div class="how-we-work-description description">
+                Закажите декларацию 3-НДФЛ, получите БЕСПЛАТНУЮ консультацию специалиста
+              </div>
             </div>
           </div>
-                
-                
-    
-                <!-- лечение -->
-                
-              
-  
-              <!-- доп доход -->
-              <div class="row">
-                <div class="col-sm">
-                  <div class="purpose-house-wrapper">
-                    <img src="/assets/images/purpose/additional-income.svg" alt="" class="purpose-house-img">
-                    <p class="purpose-house-header">Получили дополнительный доход</p>
-                    <p class="purpose-house-subheader">При продаже имущества (кваритира, дом, дача, гараж, автомобиль).</p>
-                    <p class="purpose-house-description">При получении дополнительного дохода (сдача имущества в аренду, получение выигрышей). <br> Вы обязаны подать декларацию до <span>30 апреля</span></p>
-                    <div class="purpose-price-buttons">
-                      <p class="purpose-house-price purpose-price">300 ₽</p>
-                      <button class="purpose-house-request purpose-request">Заказать</button>
-                      <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
-                        <button class="purpose-house-whatsapp purpose-whatsapp">
-                        <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
-                        <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
-                      </button>
-                      </div>
-                  </div>
-                </div>
-                </div>
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-subdescription subdescription">
+                Специалист проконсультирует по списку документов, по возможностям законного уменьшения налога и поможет
+                получить налоговый вычет максимально выгодно для Вас. Сделайте закладку сайта и обращайтесь в удобное
+                для Вас время! Пишите на WhatsApp, Viber или звоните +79033660552 - это ускорит время заполнения Вашей
+                декларации.
+              </div>
+            </div>
+          </div>
 
-                  <!-- страхование -->
-                  <div class="col-sm">
-                  <div class="purpose-house-wrapper">
-                    <img src="/assets/images/purpose/insurance.svg" alt="" class="purpose-house-img">
-                    <p class="purpose-house-header">Страхование</p>
-                    <p class="purpose-house-subheader">При оплате страховых взносов по договору добровольного страхования жизни, заключенному на срок <span>не менее 5 лет</span>, вы можете получить налоговый вычет или, говоря проще, вернуть себе часть затраченных денег на страхование жизни</p>
-                    <div class="purpose-price-buttons">
-                      <p class="purpose-house-price purpose-price">300 ₽</p>
-                      <button class="purpose-house-request purpose-request">Заказать</button>
-                      <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
-                        <button class="purpose-house-whatsapp purpose-whatsapp">
-                        <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
-                        <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
-                      </button>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                  <!-- инвестиции -->
-                  <div class="col-sm">
-                    <div class="purpose-house-wrapper">
-                      <img src="/assets/images/purpose/investitions.svg" alt="" class="purpose-house-img">
-                      <p class="purpose-house-header">Инвестиции</p>
-                      <p class="purpose-house-subheader">Максимальный размер вычета 400 000 рублей.</p>
-                      <p class="purpose-house-description">Можно вернуть <span>до 52 000 рублей в год.</span></p>
-                      <div class="purpose-price-buttons">
-                        <p class="purpose-house-price purpose-price">300 ₽</p>
-                        <button class="purpose-house-request purpose-request">Заказать</button>
-                        <div class="purpose-house-whatsapp-wrapper purpose-whatsapp-wrapper">
-                          <button class="purpose-house-whatsapp purpose-whatsapp">
-                          <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
-                          <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="circle">
+            <p class="number">2</p>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-description description">
+                Пришлите документы
               </div>
-                
-              
-              <!-- Бесплатная регистрация ИП и ООО -->
-              <div class="col-12">
-                <div class="purpose-house-wrapper free-registration">
-                  <img src="/assets/images/purpose/ip-ooo.svg" alt="" class="purpose-house-img free-registration-img">
-                  <div class="text-wrapper">
-                    <p class="purpose-house-header">Бесплатная регистрация ИП и ООО</p>
-                    <ul class="purpose-ip-ooo">
-                      <li>Подготовим все жуные докумены</li>
-                      <li>Поможем выбрать систему налогооблажения и виды деятельности</li>
-                      <li>Вы не платите госпошлину 800₽</li>
-                      <li>Вам не нужно ходить в налоговую</li>
-                    </ul>
-                    <button class="purpose-house-request">Оставить заявку</button>
-                  </div>
-                  
-                </div>
-              </div>
-              
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-subdescription subdescription">
+                Пришлите фотографии документов на WhatsApp, Viber или на электронную почту nalog.2@mail.ru наш
+                специалист проверит Ваши документы, проконсультирует и заполнит Вашу декларацию 3-НДФЛ.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="circle">
+            <p class="number">3</p>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-description description">
+                Получите декларацию 3-НДФЛ на почту
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-subdescription subdescription">
+                Специалист заполненную декларацию 3-НДФЛ пришлет Вам на электронную почту в удобном для Вас формате!
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="circle">
+            <p class="number">4</p>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-description description">
+                Оплатите услугу, после получения декларации 3-НДФЛ на вашу почту
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-subdescription subdescription">
+                Оплачиваете услугу только после получения декларации 3-НДФЛ на Вашу электронную почту.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="circle">
+            <p class="number">5</p>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-description description">
+                Подайте декларацию 3-НДФЛ или доверьте это нам
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="how-we-work-subdescription subdescription">
+                Подайте декларацию и все необходимые документы к ней в налоговую любым удобным для Вас способом. Или
+                доверьте это нам, выбрав тариф "Всё включено - "VIP"
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="list-documents">
+    <h1 class="list-documents-header">
+      Список необходимых документов
+    </h1>
+    <div class="container container-accordion">
+        <div class="accordion">
+          <div class="wrapper-accordion">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Необходимые документы при имущественном вычете при покупке квартиры
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis eleifend dolor sed commodo. Cras faucibus nunc libero, in ornare est laoreet eget. Sed pretium non nulla ac gravida. Proin venenatis ultricies ipsum, a tincidunt risus luctus tempor. Sed malesuada arcu purus. Nullam quis sem congue felis posuere dignissim id ut elit. Etiam commodo ante leo, vitae eleifend mi congue eu. Suspendisse potenti. Sed consequat magna sed imperdiet mattis. Nam in orci suscipit, convallis justo eget, fermentum arcu. Aliquam blandit enim vel justo varius, vestibulum pretium turpis tempus. Nunc vel euismod sapien. Phasellus rhoncus, mi et dignissim maximus, tellus velit porta risus, ut imperdiet dolor mi quis nulla. Etiam fringilla risus non sollicitudin elementum. In ac diam posuere, condimentum sapien ut, condimentum tellus.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Необходимые документы при продаже квартиры/дома/дачи/автомобиля/гаража?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis eleifend dolor sed commodo. Cras faucibus nunc libero, in ornare est laoreet eget. Sed pretium non nulla ac gravida. Proin venenatis ultricies ipsum, a tincidunt risus luctus tempor. Sed malesuada arcu purus. Nullam quis sem congue felis posuere dignissim id ut elit. Etiam commodo ante leo, vitae eleifend mi congue eu. Suspendisse potenti. Sed consequat magna sed imperdiet mattis. Nam in orci suscipit, convallis justo eget, fermentum arcu. Aliquam blandit enim vel justo varius, vestibulum pretium turpis tempus. Nunc vel euismod sapien. Phasellus rhoncus, mi et dignissim maximus, tellus velit porta risus, ut imperdiet dolor mi quis nulla. Etiam fringilla risus non sollicitudin elementum. In ac diam posuere, condimentum sapien ut, condimentum tellus.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Необходимые документы при сдаче имущества в аренду
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis eleifend dolor sed commodo. Cras faucibus nunc libero, in ornare est laoreet eget. Sed pretium non nulla ac gravida. Proin venenatis ultricies ipsum, a tincidunt risus luctus tempor. Sed malesuada arcu purus. Nullam quis sem congue felis posuere dignissim id ut elit. Etiam commodo ante leo, vitae eleifend mi congue eu. Suspendisse potenti. Sed consequat magna sed imperdiet mattis. Nam in orci suscipit, convallis justo eget, fermentum arcu. Aliquam blandit enim vel justo varius, vestibulum pretium turpis tempus. Nunc vel euismod sapien. Phasellus rhoncus, mi et dignissim maximus, tellus velit porta risus, ut imperdiet dolor mi quis nulla. Etiam fringilla risus non sollicitudin elementum. In ac diam posuere, condimentum sapien ut, condimentum tellus.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Необходимые документы на вычет за лечение
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis eleifend dolor sed commodo. Cras faucibus nunc libero, in ornare est laoreet eget. Sed pretium non nulla ac gravida. Proin venenatis ultricies ipsum, a tincidunt risus luctus tempor. Sed malesuada arcu purus. Nullam quis sem congue felis posuere dignissim id ut elit. Etiam commodo ante leo, vitae eleifend mi congue eu. Suspendisse potenti. Sed consequat magna sed imperdiet mattis. Nam in orci suscipit, convallis justo eget, fermentum arcu. Aliquam blandit enim vel justo varius, vestibulum pretium turpis tempus. Nunc vel euismod sapien. Phasellus rhoncus, mi et dignissim maximus, tellus velit porta risus, ut imperdiet dolor mi quis nulla. Etiam fringilla risus non sollicitudin elementum. In ac diam posuere, condimentum sapien ut, condimentum tellus.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Необходимые документы на вычет за обучение
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis eleifend dolor sed commodo. Cras faucibus nunc libero, in ornare est laoreet eget. Sed pretium non nulla ac gravida. Proin venenatis ultricies ipsum, a tincidunt risus luctus tempor. Sed malesuada arcu purus. Nullam quis sem congue felis posuere dignissim id ut elit. Etiam commodo ante leo, vitae eleifend mi congue eu. Suspendisse potenti. Sed consequat magna sed imperdiet mattis. Nam in orci suscipit, convallis justo eget, fermentum arcu. Aliquam blandit enim vel justo varius, vestibulum pretium turpis tempus. Nunc vel euismod sapien. Phasellus rhoncus, mi et dignissim maximus, tellus velit porta risus, ut imperdiet dolor mi quis nulla. Etiam fringilla risus non sollicitudin elementum. In ac diam posuere, condimentum sapien ut, condimentum tellus.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Необходимые документы на вычет за оплату страхования жизни
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis eleifend dolor sed commodo. Cras faucibus nunc libero, in ornare est laoreet eget. Sed pretium non nulla ac gravida. Proin venenatis ultricies ipsum, a tincidunt risus luctus tempor. Sed malesuada arcu purus. Nullam quis sem congue felis posuere dignissim id ut elit. Etiam commodo ante leo, vitae eleifend mi congue eu. Suspendisse potenti. Sed consequat magna sed imperdiet mattis. Nam in orci suscipit, convallis justo eget, fermentum arcu. Aliquam blandit enim vel justo varius, vestibulum pretium turpis tempus. Nunc vel euismod sapien. Phasellus rhoncus, mi et dignissim maximus, tellus velit porta risus, ut imperdiet dolor mi quis nulla. Etiam fringilla risus non sollicitudin elementum. In ac diam posuere, condimentum sapien ut, condimentum tellus.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Необходимые документы на вычет за инвестиционный счет
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis eleifend dolor sed commodo. Cras faucibus nunc libero, in ornare est laoreet eget. Sed pretium non nulla ac gravida. Proin venenatis ultricies ipsum, a tincidunt risus luctus tempor. Sed malesuada arcu purus. Nullam quis sem congue felis posuere dignissim id ut elit. Etiam commodo ante leo, vitae eleifend mi congue eu. Suspendisse potenti. Sed consequat magna sed imperdiet mattis. Nam in orci suscipit, convallis justo eget, fermentum arcu. Aliquam blandit enim vel justo varius, vestibulum pretium turpis tempus. Nunc vel euismod sapien. Phasellus rhoncus, mi et dignissim maximus, tellus velit porta risus, ut imperdiet dolor mi quis nulla. Etiam fringilla risus non sollicitudin elementum. In ac diam posuere, condimentum sapien ut, condimentum tellus.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- <h3 class="header-list-buy-appart">Необходимые документы при имущественном вычете при покупке квартиры </h3>
+            <img
+                class="arrow-list-buy" src="/assets/images/accordion/arrow-close.svg">
+          </div>
+         
+          <div class="subdescription-list">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            tempore?</div>
+
+          <h3 class="header-list-sell-appart">Необходимые документы при продаже квартиры/дома/дачи/автомобиля/гаража?
+            <img class="arrow-list-sell" src="/assets/images/accordion/arrow-close.svg">
+          </h3>
+          <div class="subdescription-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolor possimus
+            perspiciatis dolorum accusamus ratione?</div>
+
+          <h3 class="header-list-rent">Необходимые документы при сдаче имущества в аренду <img class="arrow-list-rent"
+              src="/assets/images/accordion/arrow-close.svg"></i></h3>
+          <div class="subdescription-list">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            consectetur sint assumenda ipsa iste similique itaque sed eum quibusdam distinctio? <i
+              class="fas fa-chevron-down"></i></div>
+
+          <h3 class="header-list-medical">Необходимые документы на вычет за лечение <img class="arrow-list-med"
+              src="/assets/images/accordion/arrow-close.svg"></h3>
+          <div class="subdescription-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, enim!
+          </div>
+
+          <h3 class="header-list-education">Необходимые документы на вычет за обучение <img class="arrow-list-edu"
+              src="/assets/images/accordion/arrow-close.svg"></h3>
+          <div class="subdescription-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            distinctio maiores eos autem nobis, laboriosam minus, asperiores sequi, necessitatibus possimus eaque!
+            Expedita odio rem quam!</div>
+
+          <h3 class="header-list-insurance">Необходимые документы на вычет за оплату страхования жизни <img
+              class="arrow-list-ins" src="/assets/images/accordion/arrow-close.svg"></h3>
+          <div class="subdescription-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            distinctio maiores eos autem nobis, laboriosam minus, asperiores sequi, necessitatibus possimus eaque!
+            Expedita odio rem quam!</div>
+
+          <h3 class="header-list-investions">Необходимые документы на вычет за инвестиционный счет <img
+              class="arrow-list-inv" src="/assets/images/accordion/arrow-close.svg"></h3>
+          <div class="subdescription-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            distinctio maiores eos autem nobis, laboriosam minus, asperiores sequi, necessitatibus possimus eaque!
+            Expedita odio rem quam!</div> -->
         </div>
 
-        <div class="how-we-work">
-          <h1 class="how-we-work-header">
-            Как мы работаем
-          </h1>
-          <div class="container">
-            <div class="row">
-              <div class="col-3">
-                <div class="circle">
-                  <p class="number">1</p>
-                </div>
-                <div class="line"></div>
-              </div>
-              <div class="col-9">
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-description description">
-                      Закажите декларацию 3-НДФЛ, получите БЕСПЛАТНУЮ консультацию специалиста
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-subdescription subdescription">
-                      Специалист проконсультирует по списку документов, по возможностям законного уменьшения налога и поможет получить налоговый вычет максимально выгодно для Вас. Сделайте закладку сайта и обращайтесь в удобное для Вас время! Пишите на WhatsApp, Viber или звоните +79033660552 - это ускорит время заполнения Вашей декларации.
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="form-bottom">
+    <div class="container">
+      <div class="row form-row">
+        <div class="col-sm">
+          <div class="form-bottom-form">
+            <div class="form-bottom-wrapper">
+              <h3 class="form-header">Закажите бесплатную консультацию</h3>
+              <p class="main-page-form-fill__tel">Телефон для связи</p>
+              <input type="tel" class="main-page-form-fill__tel-input" name="" id="">
+              <p class="main-page-form-fill__reason">На что у Вас 3-НДФЛ</p>
+              <select name="" id="" class="main-page-form-fill__dropdown">
+                <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+                <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+                <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+                <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
+              </select>
+              <button class="main-page-form-fill__submit">Заказать</button>
+              <h4 class="whatsapp-text">Напишите нам в WhatsApp</h4>
+              <button class="purpose-house-whatsapp purpose-whatsapp">
+                <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
+                <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
+              </button>
             </div>
-            <div class="row">
-              <div class="col-3">
-                <div class="circle">
-                  <p class="number">2</p>
-                </div>
-                <div class="line"></div>
-              </div>
-              <div class="col-9">
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-description description">
-                      Пришлите документы
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-subdescription subdescription">
-                      Пришлите фотографии документов на WhatsApp, Viber или на электронную почту nalog.2@mail.ru наш специалист проверит Ваши документы, проконсультирует и заполнит Вашу декларацию 3-НДФЛ.
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-                <div class="circle">
-                  <p class="number">3</p>
-                </div>
-                <div class="line"></div>
-              </div>
-              <div class="col-9">
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-description description">
-                      Получите декларацию 3-НДФЛ на почту
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-subdescription subdescription">
-                      Специалист заполненную декларацию 3-НДФЛ пришлет Вам на электронную почту в удобном для Вас формате!
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-                <div class="circle">
-                  <p class="number">4</p>
-                </div>
-                <div class="line"></div>
-              </div>
-              <div class="col-9">
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-description description">
-                      Оплатите услугу, после получения декларации 3-НДФЛ на вашу почту
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-subdescription subdescription">
-                      Оплачиваете услугу только после получения декларации 3-НДФЛ на Вашу электронную почту.
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-                <div class="circle">
-                  <p class="number">5</p>
-                </div>
-              </div>
-              <div class="col-9">
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-description description">
-                      Подайте декларацию 3-НДФЛ или доверьте это нам
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="how-we-work-subdescription subdescription">
-                      Подайте декларацию и все необходимые документы к ней в налоговую любым удобным для Вас способом. Или доверьте это нам, выбрав тариф "Всё включено - "VIP"
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
+
           </div>
         </div>
-        <div class="list-documents">
-          <h1 class="list-documents-header">
-            Список необходимых документов
-          </h1>
-          <div class="container">
-            <div class="row row-lists">
-                <div class="accordion">
-                  <h3 class="header-list-buy-appart">Необходимые документы при имущественном вычете при покупке квартиры <img class="arrow-list-buy" src="/assets/images/accordion/arrow-close.svg"></h3>
-        <div class="subdescription-list">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, tempore?</div>
-        
-        <h3 class="header-list-sell-appart">Необходимые документы при продаже квартиры/дома/дачи/автомобиля/гаража? <img class="arrow-list-sell" src="/assets/images/accordion/arrow-close.svg"></h3>
-        <div class="subdescription-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolor possimus perspiciatis dolorum accusamus ratione?</div>
-        
-        <h3 class="header-list-rent">Необходимые документы при сдаче имущества в аренду <img class="arrow-list-rent" src="/assets/images/accordion/arrow-close.svg"></i></h3>
-        <div class="subdescription-list">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum consectetur sint assumenda ipsa iste similique itaque sed eum quibusdam distinctio? <i class="fas fa-chevron-down"></i></div>
-        
-        <h3 class="header-list-medical">Необходимые документы на вычет за лечение <img class="arrow-list-med" src="/assets/images/accordion/arrow-close.svg"></h3>
-        <div class="subdescription-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, enim!</div>
-        
-        <h3 class="header-list-education">Необходимые документы на вычет за обучение <img class="arrow-list-edu" src="/assets/images/accordion/arrow-close.svg"></h3>
-        <div class="subdescription-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam distinctio maiores eos autem nobis, laboriosam minus, asperiores sequi, necessitatibus possimus eaque! Expedita odio rem quam!</div>
-        
-        <h3 class="header-list-insurance">Необходимые документы на вычет за оплату страхования жизни <img class="arrow-list-ins" src="/assets/images/accordion/arrow-close.svg"></h3>
-        <div class="subdescription-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam distinctio maiores eos autem nobis, laboriosam minus, asperiores sequi, necessitatibus possimus eaque! Expedita odio rem quam!</div>
-    
-        <h3 class="header-list-investions">Необходимые документы на вычет за инвестиционный счет <img class="arrow-list-inv" src="/assets/images/accordion/arrow-close.svg"></h3>
-        <div class="subdescription-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam distinctio maiores eos autem nobis, laboriosam minus, asperiores sequi, necessitatibus possimus eaque! Expedita odio rem quam!</div>
-              </div>
-            
-              </div>
-            </div>
+        <div class="col-sm">
+          <img class="img" src="/assets/images/form.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-main">
+    <div class="map-contact-screen">
+      <h1 class="map-contact-header">Контактная информация</h1>
+      <p class="map-adress-subheader">Адрес</p>
+      <p class="map-moscow">г. Москва, Новая площадь, дю 6</p>
+      <p class="map-spb">г. Санкт-Петербург, ул Гороховая, д. 46</p>
+      <p class="map-tel-subheader">Телефоны</p>
+      <p class="map-tel-1">+7 (903) 366-05-52</p>
+      <p class="map-tel-2">+7 (903) 366-05-52</p>
+      <p class="map-email-subheader">Электронная почта</p>
+      <p class="map-email"><a href="mailto: nalog.2@mail.ru">nalog.2@mail.ru</a></p>
+      <div class="row">
+        <div class="col-6">
+          <div class="social-media">
+            <img src="/assets/images/vk.svg" alt="" class="vk">
+            <p class="follower-vk">4501</p>
+          </div>
+
+        </div>
+        <div class="col-6">
+          <div class="social-media">
+            <img src="/assets/images/instagram.svg" alt="" class="vk">
+            <p class="follower-insta">349</p>
           </div>
         </div>
-        <div class="form-bottom">
-          <div class="container">
-            <div class="row form-row">
-              <div class="col-sm">
-                <div class="form-bottom-form">
-                    <div class="form-bottom-wrapper">
-                      <h3 class="form-header">Закажите бесплатную консультацию</h3>
-                      <p class="main-page-form-fill__tel">Телефон для связи</p>
-                      <input type="tel" class="main-page-form-fill__tel-input" name="" id="">
-                      <p class="main-page-form-fill__reason">На что у Вас 3-НДФЛ</p>
-                      <select name="" id="" class="main-page-form-fill__dropdown">
-                        <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                        <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                        <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                        <option class="main-page-form-fill__dropdown-el">Имущественный вычет</option>
-                      </select>
-                      <button class="main-page-form-fill__submit">Заказать</button>
-                      <h4 class="whatsapp-text">Напишите нам в WhatsApp</h4>
-                      <button class="purpose-house-whatsapp purpose-whatsapp">
-                        <img src="/assets/images/purpose/whatsapp-black.svg" alt="">
-                        <p class="purpose-house-whatsapp-text purpose-whatsapp-text">Написать в WhatsApp</p>
-                      </button>
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <img class="img" src="/assets/images/form.svg" alt="">
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="map-main">
-          <div class="map-contact-screen">
-            <h1 class="map-contact-header">Контактная информация</h1>
-            <p class="map-adress-subheader">Адрес</p>
-            <p class="map-moscow">г. Москва, Новая площадь, дю 6</p>
-            <p class="map-spb">г. Санкт-Петербург, ул Гороховая, д. 46</p>
-            <p class="map-tel-subheader">Телефоны</p>
-            <p class="map-tel-1">+7 (903) 366-05-52</p>
-            <p class="map-tel-2">+7 (903) 366-05-52</p>
-            <p class="map-email-subheader">Электронная почта</p>
-            <p class="map-email"><a href="mailto: nalog.2@mail.ru">nalog.2@mail.ru</a></p>
-            <div class="row">
-              <div class="col-6">
-                <div class="social-media">
-                  <img src="/assets/images/vk.svg" alt="" class="vk">
-                  <p class="follower-vk">4501</p>
-                </div>
-                
-              </div>
-              <div class="col-6">
-                <div class="social-media">
-                  <img src="/assets/images/instagram.svg" alt="" class="vk">
-                  <p class="follower-insta">349</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="map" id="map">
-          </div>
-        </div>
-        <div class="footer">
-          <div class="footer-wrapper">
-            <div class="footer-before-divider">
-              <img src="/assets/images/main-page/logo.svg" alt="" class="footer-logo">
-              <p class="footer-text">Заполним 3-ндфл недорого</p>
-              <p class="footer-text-2">Закажите декларацию 3-НДФЛ онлайн</p>
-            </div>
-            
-            <hr class="solid">
-            <p class="footer-copyright">© 2022, Центр Отчетности </p>
-          </div>
-        </div>
-  </body>
+      </div>
+    </div>
+    <div class="map" id="map">
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-before-divider">
+        <img src="/assets/images/main-page/logo.svg" alt="" class="footer-logo">
+        <p class="footer-text">Заполним 3-ндфл недорого</p>
+        <p class="footer-text-2">Закажите декларацию 3-НДФЛ онлайн</p>
+      </div>
+
+      <hr class="solid">
+      <p class="footer-copyright">© 2022, Центр Отчетности </p>
+    </div>
+  </div>
+</body>
+
 </html>

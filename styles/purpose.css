@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap");
 .purpose-house-wrapper {
   margin-top: 64px;
   height: 732px;
@@ -38,8 +38,8 @@
   margin-top: 0px;
   margin-bottom: 31px;
 }
-.purpose-house-description span{
-    font-weight: 700;
+.purpose-house-description span {
+  font-weight: 700;
 }
 .purpose-house-price {
   width: max-content;
@@ -92,71 +92,83 @@
 .purpose-house-whatsapp-text {
   margin-left: 9px;
 }
-.purpose-ip-ooo{
-    list-style-type: none;
-    padding-left: 0;
+.purpose-ip-ooo {
+  list-style-type: none;
+  padding-left: 0;
 }
-.purpose-ip-ooo li{
-    padding-top: 15px;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    line-height: 21.79px;
-    
+.purpose-ip-ooo li {
+  padding-top: 15px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 21.79px;
 }
 
-.purpose-house-wrapper{
-  
-  height: 600px;
+.purpose-house-wrapper {
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.free-registration{
-display: flex;
-flex-direction: row;
-height: max-content;
+.free-registration {
+  display: flex;
+  flex-direction: row;
+  height: max-content !important;
 }
-.free-registration-img{
+.free-registration-img {
   width: auto;
 }
-.text-wrapper{
+.text-wrapper {
   width: 100%;
 }
-.free-registration-img{
+.free-registration-img {
   height: 297px;
   width: 400px;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 60px;
+}
+
 @media (min-width: 320px) {
   .free-registration {
     flex-direction: column;
   }
-  .free-registration-img{
+  .free-registration-img {
     width: auto;
     height: 200px;
   }
-  .purpose-house-wrapper{
+  .grid {
+    grid-template-columns: 100%;
+  }
+  .purpose-house-wrapper {
+    height: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 45% 45%;
+  }
+  .purpose-house-wrapper {
     height: auto;
   }
 }
-@media(min-width: 768px){
-  .purpose-house-wrapper{
-    height: 652px;
+@media (min-width: 992px) {
+  .free-registration {
+    flex-direction: row;
   }
-}
-  @media (min-width: 992px) {
-    .free-registration {
-      flex-direction: row;
-  }
-  .free-registration-img{
+  .free-registration-img {
     height: 297px;
     width: 400px;
   }
-  .purpose-house-wrapper{
-    height: 680px;
-  }
-  .free-registration{
+
+  .free-registration {
     height: max-content !important;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
+  }
+  .grid {
+    grid-template-columns: 30% 30% 30%;
   }
 }
